@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#F0F1F3]">
+    <!-- header -->
+    <div class="bg-[#008ACB] h-24 flex items-end pb-2 px-70">
+        <img src="https://dsvn.vn/images/LOGO_n.png" alt="">
+        <div class="">
+            <h1 id="dateDisplay" class="text-white">today</h1>
+        </div>
+    </div>
+
+    <!-- nav -->
+    <div id="nav" class="mt-5 bg-[#008ACB] h-12 flex items-center flex justify-center"></div>
+
+    <!-- content -->
+
+    <div class="bg-white w-[80%] mx-auto relative">
+        <div class=" flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/4 px-2">
+                <div class="border border-[#CCCCCC] mt-5">
+                    <div class="bg-[#CCCCCC] flex items-center justify-center py-1">
+                        <div class="text-[#0091d4] mt-1 mr-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-logs-icon lucide-logs">
+                                <path d="M13 12h8" />
+                                <path d="M13 18h8" />
+                                <path d="M13 6h8" />
+                                <path d="M3 12h1" />
+                                <path d="M3 18h1" />
+                                <path d="M3 6h1" />
+                                <path d="M8 12h1" />
+                                <path d="M8 18h1" />
+                                <path d="M8 6h1" />
+                            </svg>
+                        </div>
+                        <h1 class="font-bold font-[14px] text-[#0091d4]">Thông tin hành trình</h1>
+                    </div>
+                    <div class="bg-[#008ACB] h-1"></div>
+                    <div class="flex flex-col gap-2 p-2">
+                        <div>
+                            <h2 class="font-bold font-[14px] text-[#0091d4]">Ga đi</h2>
+                            <input type="text" placeholder="Ga đi" class="border border-[#CCCCCC] w-full mt-2 p-1">
+                        </div>
+                        <div>
+                            <h2 class="font-bold font-[14px] text-[#0091d4]">Ga đến</h2>
+                            <input type="text" placeholder="Ga đến" class="border border-[#CCCCCC] w-full mt-2 p-1">
+                        </div>
+                        <div>
+                            <input type="radio" name="way" id="" class="cursor-pointer">
+                            <label for="">Một chiều</label>
+
+                            <input type="radio" name="way" id="" class="ml-5 cursor-pointer">
+                            <label for="">Khứ hồi</label>
+                        </div>
+                        <div>
+                            <h2 class="font-bold font-[14px] text-[#0091d4]">Ngày đi</h2>
+                            <div class="flex items-center">
+                                <input type="text" placeholder="Ngày đi" class="border border-[#CCCCCC] w-full p-1">
+                                <div
+                                    class="cursor-pointer bg-[#008ACB] flex items-center justify-center text-white p-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-calendar-days-icon lucide-calendar-days">
+                                        <path d="M8 2v4" />
+                                        <path d="M16 2v4" />
+                                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                                        <path d="M3 10h18" />
+                                        <path d="M8 14h.01" />
+                                        <path d="M12 14h.01" />
+                                        <path d="M16 14h.01" />
+                                        <path d="M8 18h.01" />
+                                        <path d="M12 18h.01" />
+                                        <path d="M16 18h.01" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-bold font-[14px] text-[#0091d4]">Ngày về</h2>
+                            <div class="flex items-center">
+                                <input type="text" placeholder="Ngày đi" class="border border-[#CCCCCC] w-full p-1">
+                                <div
+                                    class="cursor-pointer bg-[#008ACB] flex items-center justify-center text-white p-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-calendar-days-icon lucide-calendar-days">
+                                        <path d="M8 2v4" />
+                                        <path d="M16 2v4" />
+                                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                                        <path d="M3 10h18" />
+                                        <path d="M8 14h.01" />
+                                        <path d="M12 14h.01" />
+                                        <path d="M16 14h.01" />
+                                        <path d="M8 18h.01" />
+                                        <path d="M12 18h.01" />
+                                        <path d="M16 18h.01" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center my-2">
+                        <button class="bg-[#008ACB] text-white p-1 mx-auto">Tìm kiếm</button>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h1 class="border border-[#CCCCCC] font-bold font-[14px] text-[#0091d4] p-2">Khai trương tàu du lịch
+                        kết nối di sản Huế - Đà Nẵng</h1>
+                </div>
+
+                <div class="mt-5 flex items-center justify-center">
+                    <img class="w-full" src="https://dsvn.vn/images/tau-du-lich-hue-da-nang.jpg" alt="">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex justify-center items-center py-5">
+                    <img class="w-full" src="/banner1.png" alt="">
+                </div>
+                <div class="flex justify-center items-center pt-5">
+                    <img class="w-full" src="/banner2.jpg" alt="">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/4 px-2">
+                <div class="border border-[#CCCCCC] mt-5">
+                    <div class="bg-[#CCCCCC] flex items-center justify-center py-1">
+                        <div class="text-[#0091d4] mt-1 mr-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-logs-icon lucide-logs">
+                                <path d="M13 12h8" />
+                                <path d="M13 18h8" />
+                                <path d="M13 6h8" />
+                                <path d="M3 12h1" />
+                                <path d="M3 18h1" />
+                                <path d="M3 6h1" />
+                                <path d="M8 12h1" />
+                                <path d="M8 18h1" />
+                                <path d="M8 6h1" />
+                            </svg>
+                        </div>
+                        <h1 class="font-bold font-[14px] text-[#0091d4]">Giỏ vé</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-[#e55a05] font-bold text-center py-2">Chưa có vé</h1>
+                    </div>
+                </div>
+
+                <div class="border border-[#CCCCCC] mt-5">
+                    <h1 class="font-bold font-[14px] text-[#0091d4] py-2 text-center">Kết nối với chúng tôi</h1>
+                    <div class="flex items-center justify-center">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/zalo.jpg" alt="">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/facebook.png" alt="">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/icon-youtube.png" alt="">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/Member.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center py-2">
+                        <img src="https://dsvn.vn/images/banner-vr.com.vn.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="border border-[#CCCCCC] mt-5">
+                    <h1 class="font-bold font-[14px] text-[#0091d4] py-1 text-center">Tổng đài Hà Nội</h1>
+                    <div class="flex flex-row px-5 justify-between pb-2">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/icon-ksg-facebook.png" alt="">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/icon-ksg-website.png" alt="">
+                        <img class="h-10" src="https://dsvn.vn/images/phone-hn.png" alt="">
+                    </div>
+                </div>
+
+                <div class="border border-[#CCCCCC] mt-5">
+                    <h1 class="font-bold font-[14px] text-[#0091d4] py-1 text-center">Tổng đài Hà Nội</h1>
+                    <div class="flex flex-row px-5 justify-between pb-2">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/icon-ksg-facebook.png" alt="">
+                        <img class="w-10 h-10" src="https://dsvn.vn/images/icon-ksg-website.png" alt="">
+                        <img class="h-10" src="https://dsvn.vn/images/phone-hn.png" alt="">
+                    </div>
+                </div>
+
+                <div class="border border-[#CCCCCC] mt-5 px-2">
+                    <h1 class="font-bold font-[14px] text-[#0091d4] py-1 text-center">Tra cứu hoá đơn</h1>
+                    <p class="text-center text-[#0091d4]">Để tra cứu hóa đơn điện tử, quý khách hàng vui lòng <a href=""
+                            class="underline hover:font-bold">bấm vào đây</a></p>
+                </div>
+
+                <div class="border border-[#CCCCCC] mt-5 p-2 flex flex-col items-center justify-center">
+                    <h1 class="font-bold font-[14px] text-[#0091d4] pb-2 text-center">Hành trình tàu thực tế</h1>
+                    <img src="https://dsvn.vn/images/icon-time-table.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-[#d9edf7] border border-[#bce8f1] p-2 rounded-lg w-[95%] mx-auto my-5">
+            <a href="" class="text-[#3a87ad] hover:underline font-bold ml-5 text-[14px] my-2">
+                CHÍNH SÁCH GIÁ VÉ, QUY ĐỊNH ĐỔI – TRẢ VÉ TÀU VÀ HƯỚNG DẪN TẢI HÓA ĐƠN VÉ TÀU HỎA – NĂM 2025
+            </a>
+        </div>
+
+        <div class="flex flex-col py-5 text-center gap-2">
+            <h1>Tải ứng dụng</h1>
+            <div class="flex items-center justify-center">
+                <img class="h-[40px] cursor-pointer" src="https://dsvn.vn/images/appstore.png" alt="">
+                <img class="h-[40px] cursor-pointer" src="https://dsvn.vn/images/playstore.png" alt="">
+            </div>
+        </div>
+
+        <div class="bg-[#CCCCCC] flex flex-col gap-2 py-2 mt-5">
+            <div id="mini-nav" class="flex items-center justify-center"></div>
+            <div id="policy" class="flex items-center justify-center"></div>
+        </div>
+
+        <div class="text-center py-10">
+            <h1>Tổng công ty Đường sắt Việt Nam. Số 118 đường Lê Duẩn, Phường Văn Miếu - Quốc Tử Giám, Thành phố Hà Nội,
+                Việt Nam.</h1>
+            <p class="text-[#af3f3f] mt-5">Giấy chứng nhận ĐKKD số 113642 theo QĐ thành lập số 973/QĐ-TTg ngày 25/06/2010 của Thủ tướng Chính phủ.
+                <br>
+                Mã số doanh nghiệp: 0100105052, đăng ký lần đầu ngày 26/07/2010, đăng ký thay đổi lần 4 ngày 27/06/2014
+                tại Sở KHĐT Thành phố Hà Nội.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function formatDate() {
+            const daysOfWeek = ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"];
+            const today = new Date();
+            const dayOfWeek = daysOfWeek[today.getDay()];
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const year = today.getFullYear();
+            return `${dayOfWeek}, ${day}/${month}/${year}`;
+        }
+        document.getElementById('dateDisplay').textContent = formatDate();
+
+        function renderNav() {
+            const items = ["Tìm vé", "Thông tin đặt chỗ", "trả vé", "kiểm tra vé", "giờ tàu - giá vé", "khuyến mãi", "các quy định", "hướng dẫn", "liên hệ"]
+            const nav = document.getElementById('nav')
+            nav.innerHTML = items.map(item => `<div class="px-5 text-white uppercase cursor-pointer">${item}</div>`).join('')
+        }
+        renderNav()
+
+        function renderMiniNav() {
+            const items = ["Tìm vé", "Thông tin đặt chỗ", "giờ tàu - giá vé", "hướng dẫn", "liên hệ"]
+            const nav = document.getElementById('mini-nav')
+            nav.innerHTML = items.map(item => `<div class="px-5 text-[#0091d4] capitalize">${item}</div>`).join('')
+        }
+        renderMiniNav()
+
+        function renderPolicy() {
+            const items = ["mua hàng", "thanh toán", "hoàn trả", "bảo mật thông tin"]
+            const nav = document.getElementById('policy')
+            nav.innerHTML = items.map(item => `<div class="px-5 text-[#0091d4]">Chính sách ${item}</div>`).join('')
+        }
+        renderPolicy()
+    </script>
+</body>
+
+</html>
