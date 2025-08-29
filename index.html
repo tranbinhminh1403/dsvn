@@ -246,6 +246,7 @@
         </div>
     </div>
 
+
     <script>
         function formatDate() {
             const daysOfWeek = ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"];
@@ -296,11 +297,27 @@
             sideMenu.classList.add('-translate-x-full');
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (event) => {
             if (!sideMenu.contains(event.target) && !menuToggle.contains(event.target)) {
                 sideMenu.classList.add('-translate-x-full');
             }
+        });
+        (function (w, d, s, o, f, js, fjs) {
+            w["CakeAIChatbotApp_widget"] = o;
+            w[o] =
+                w[o] ||
+                function () {
+                    (w[o].q = w[o].q || []).push(arguments);
+                };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            js.crossOrigin = "anonymous";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "CakeAIChatbotApp", "https://chatbot.84soft.vn/index.min.js",);
+        CakeAIChatbotApp("init", {
+            token: "c8b5d6b4-4186-497b-90bc-17b300a243f9",
         });
     </script>
 </body>
